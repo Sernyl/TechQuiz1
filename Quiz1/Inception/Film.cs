@@ -1,5 +1,3 @@
-﻿namespace Quiz1.Inception;
-
 public class Film
 {
     private const int LastDreamLevel = int.MaxValue;
