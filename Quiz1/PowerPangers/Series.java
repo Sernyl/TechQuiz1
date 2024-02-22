@@ -1,5 +1,3 @@
-package Quiz1.PowerPangers;
-
 import java.awt.Color;
 
 public class Series {
