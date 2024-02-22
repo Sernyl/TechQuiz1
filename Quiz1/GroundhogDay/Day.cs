@@ -9,7 +9,7 @@ public class Day
         _dayAction = dayAction;
     }
 
-    private void LiveDay()
+    public void LiveDay()
     {
         while (true)
             try
@@ -23,7 +23,7 @@ public class Day
             }
     }
 
-    public void WakeUp()
+    private void WakeUp()
     {
     }
 }
