@@ -4,9 +4,10 @@ public class Day
 {
     private readonly Action _dayAction;
 
-    public Day(Action dayAction)
+    public Day(string liveHistory)
     {
-        _dayAction = dayAction;
+        prewiousDayHistory = dayAction;
+        
     }
 
     public void LiveDay()
@@ -14,8 +15,12 @@ public class Day
         while (true)
             try
             {
-                WakeUp();
-                _dayAction();
+                foreach(var character in otherCharacters)
+                {
+                    character.WakeUp();
+                }
+                var dayHistory
+                prewiousDayHistory += prewiousDayHistory;
                 return;
             }
             catch
@@ -23,7 +28,23 @@ public class Day
             }
     }
 
-    private void WakeUp()
+    
+    private Character mainCharacter;
+    private Character[] otherCharacters;
+    private string prewiousDayHistory = "All events of the day";
+}
+
+public class Character
+{
+    public void WakeUp()
+    {
+    }
+
+    public void SetHistory(string history)
+    {
+    }
+
+    public void RevertHistory()
     {
     }
 }
