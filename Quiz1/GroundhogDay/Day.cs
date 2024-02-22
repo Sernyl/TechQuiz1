@@ -2,36 +2,29 @@
 
 public class Day
 {
-    private readonly Action _dayAction;
-
-    public Day(string liveHistory)
+    public Day()
     {
-        prewiousDayHistory = dayAction;
-        
+        mainCharacter = new Character();
+        otherCharacters = new Character[13];
+        for (var i = 0; i < 12; i++)
+        {
+            otherCharacters[i] = new Character();
+        }
     }
 
     public void LiveDay()
     {
         while (true)
-            try
-            {
-                foreach(var character in otherCharacters)
-                {
-                    character.WakeUp();
-                }
-                var dayHistory
-                prewiousDayHistory += prewiousDayHistory;
-                return;
-            }
-            catch
-            {
-            }
-    }
+        {
+            mainCharacter.WakeUp();
+            var dayHistory = mainCharacter.DoActions();
 
+            mainCharacter.SetHistory(mainCharacter.GetLiveExperience() + dayHistory);
+        }
+    }
     
     private Character mainCharacter;
     private Character[] otherCharacters;
-    private string prewiousDayHistory = "All events of the day";
 }
 
 public class Character
@@ -44,7 +37,13 @@ public class Character
     {
     }
 
-    public void RevertHistory()
+    public string DoActions()
     {
+        return "";
+    }
+
+    public string GetLiveExperience()
+    {
+        return "";
     }
 }
