@@ -1,6 +1,4 @@
-﻿namespace Quiz1.GroundhogDay;
-
-public class Day
+﻿public class Day
 {
     public Day()
     {
