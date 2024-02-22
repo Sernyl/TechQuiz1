@@ -1,5 +1,3 @@
-﻿namespace Quiz1.Transformers;
-
 public class Character
 {
     private readonly FormType[] compatibleFormTypes =
