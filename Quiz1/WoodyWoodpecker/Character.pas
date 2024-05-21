@@ -15,8 +15,8 @@ uses
 
 procedure TCharacter.Intro;
 begin
-  Writeln('Universal International presents');
-  Writeln('- Is who? *creepy laughter*');
+  Writeln('Universal International представляет');
+  Writeln('- Угадай, кого? *бесячий смех*');
 end;
 
 end.
