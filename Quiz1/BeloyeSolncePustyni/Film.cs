@@ -1,4 +1,4 @@
-﻿namespace Quiz1.BeloyeSolncePustyni
+﻿namespace Quiz1.Film
 {
     public class Film
     {
