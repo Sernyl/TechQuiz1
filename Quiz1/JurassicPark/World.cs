@@ -1,5 +1,3 @@
-﻿namespace Quiz1.JurassicPark;
-
 public class World
 {
     private List<Organism> organisms;
