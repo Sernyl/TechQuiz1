@@ -1,20 +1,12 @@
 ﻿namespace Quiz1.Film
 {
-    public class Film
-    {
-        public void Do(Character character)
-        {
-            character.OpenFace();
-        }
-    }
-
     public class Gulchitay : Character
     {
     }
 
     public class Abdulla : Character
     {
-        protected override void Open()
+        public override void Open()
         {
             throw new ApplicationException();
         }
@@ -22,14 +14,8 @@
 
     public abstract class Character
     {
-        public void OpenFace()
+        public virtual void Open()
         {
-            Open();
-        }
-
-        protected virtual void Open()
-        {
-
         }
     }
 }
