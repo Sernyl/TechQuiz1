@@ -1,4 +1,4 @@
-public class Character
+public class Character1
 {
     private readonly FormType[] compatibleFormTypes =
     {
