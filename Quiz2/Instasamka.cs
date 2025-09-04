@@ -1,6 +1,8 @@
-﻿namespace Quiz2;
+﻿using Quiz2.KiSh;
 
-public class Instasamka
+namespace Quiz2.Instasamka;
+
+public class Singer
 {
     public IEnumerable<Human> Revision(List<object> items)
     {

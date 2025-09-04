@@ -1,6 +1,6 @@
-﻿namespace Quiz2;
+﻿namespace Quiz2.Shufutinsky;
 
-public class Shufutinsky
+public class Singer
 {
     public List<DateTime> GetDate()
     {

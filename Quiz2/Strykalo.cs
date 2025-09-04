@@ -1,6 +1,8 @@
-﻿namespace Quiz2;
+﻿using Quiz2.KiSh;
 
-public class Strykalo
+namespace Quiz2.Strykalo;
+
+public class Singer
 {
     public void Do(TravelVoucher voucher, Human I, Human You)
     {

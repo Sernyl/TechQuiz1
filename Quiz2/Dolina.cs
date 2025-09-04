@@ -1,8 +1,8 @@
-﻿namespace Quiz2;
+﻿namespace Quiz2.Dolina;
 
-public class Dolina
+public class Singer
 {
-    string GetMain()
+    public string GetMain()
     {
         Dictionary<string, string> dictionary = new Dictionary<string, string>
         {

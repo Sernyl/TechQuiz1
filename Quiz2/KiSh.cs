@@ -1,6 +1,6 @@
-﻿namespace Quiz2;
+﻿namespace Quiz2.KiSh;
 
-public class Horror
+public class Singer
 {
     public void Do()
     {
