@@ -17,18 +17,6 @@ public class City : IComparable<City>
         }
     }
     
-    public bool HasTransport(string infrastructure)
-    {
-        switch (infrastructure)
-        {
-            case "Steamship":
-            case "Tram":
-                return true;
-            default:
-                return false;
-        }
-    }
-    
     public bool IsTheBest => true;
     public Color SidewalkColor => Color.Blue;
 
