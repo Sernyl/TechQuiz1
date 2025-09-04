@@ -2,7 +2,7 @@
 
 namespace Quiz2.Bravo;
 
-public class City : IComparable<City>
+public class ThisCity : City, IComparable<City>
 {
     public bool HasInfrastructure(string infrastructure)
     {
@@ -17,11 +17,16 @@ public class City : IComparable<City>
         }
     }
     
-    public bool IsTheBest => true;
+    public override bool IsTheBest => true;
     public Color SidewalkColor => Color.Blue;
 
     public int CompareTo(City? other)
     {
         return 1;
     }
+}
+
+public abstract class City
+{
+    public abstract bool IsTheBest { get; }
 }
