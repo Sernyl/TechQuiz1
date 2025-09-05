@@ -12,7 +12,11 @@ public class Singer
             UseTrain(I);
         }
         
-        var world = new World(new Yacht(), new DateTime(2025, 8, 12), new Human("I"), new Human("You"));
+        var world = new World(
+            new Yacht(), 
+            new DateTime(2025, 8, 12), 
+            new Human("I"), 
+            new Human("You"));
     }
 
     public class TravelVoucher
